@@ -3,8 +3,8 @@
   <section id="about" class="about">
     <div class="container">
       <div class="section-title">
-        <span>About Me</span>
-        <h2>About Me</h2>
+        <span>Sobre mi</span>
+        <h2>Sobre mi</h2>
         <p>{{ about.aboutMe }}</p>
       </div>
 
@@ -21,19 +21,19 @@
               <div class="col-lg-6">
                 <ul>
                   <li>
-                    <i class="bi bi-chevron-right"></i> <strong>Name:</strong>
+                    <i class="bi bi-chevron-right"></i> <strong>Nombre:</strong>
                     <span>{{ about.name }}</span>
                   </li>
                   <li>
                     <i class="bi bi-chevron-right"></i>
-                    <strong>Website:</strong> <span>{{ about.website }}</span>
+                    <strong>Website:</strong> <span><a :href="about.website">{{ about.website }}</a></span>
                   </li>
                   <li>
-                    <i class="bi bi-chevron-right"></i> <strong>Phone:</strong>
+                    <i class="bi bi-chevron-right"></i> <strong>Teléfono:</strong>
                     <span>{{ about.phoneNumber }}</span>
                   </li>
                   <li>
-                    <i class="bi bi-chevron-right"></i> <strong>City:</strong>
+                    <i class="bi bi-chevron-right"></i> <strong>Ciudad:</strong>
                     <span>{{ about.city }}</span>
                   </li>
                 </ul>
@@ -42,10 +42,10 @@
                 <ul>
                   <li>
                     <i class="bi bi-chevron-right"></i>
-                    <strong>Degree:</strong> <span>{{ about.degree }}</span>
+                    <strong>Título:</strong> <span>{{ about.degree }}</span>
                   </li>
                   <li>
-                    <i class="bi bi-chevron-right"></i> <strong>Email:</strong>
+                    <i class="bi bi-chevron-right"></i> <strong>Correo:</strong>
                     <span>{{ about.email }}</span>
                   </li>
                                  <li>
@@ -66,7 +66,7 @@
                     class="purecounter"
                   ></span>
                   <p>
-                    <strong>Years of experience</strong> {{about.experience}}
+                    <strong>Años de experiencia</strong> {{about.experience}}
                   </p>
                 </div>
               </div>
@@ -80,7 +80,7 @@
                     class="purecounter"
                   ></span>
                   <p>
-                    <strong>Awards</strong> {{about.awards}}
+                    <strong>Certificaciones</strong> {{about.awards}}
                   </p>
                 </div>
               </div>
@@ -95,7 +95,7 @@
                 <div
                   class="progress-bar"
                   role="progressbar"
-                  aria-valuenow="100"
+                  :aria-valuenow="skill.val"
                   aria-valuemin="0"
                   aria-valuemax="100"
                 ></div>

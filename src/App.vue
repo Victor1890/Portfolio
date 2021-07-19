@@ -17,7 +17,7 @@
       </nav>
     </header>
     <Banner :banner="bannerInfo" />
-    <About :about="aboutInfo"/>
+    <About :about="aboutInfo" />
     <Projects />
     <!--<BannerSecondary/>-->
     <Contact />
@@ -47,26 +47,30 @@ export default {
 
       bannerInfo: {
         name: "Natalie Corniell",
-        aboutMe: "- Web Developer in Santo Domingo -",
+        aboutMe: "- Desarrolladora web en Santo Domingo -",
         photo: 'background: url("../assets/img/me.jpg") top right;',
       },
-        aboutInfo: {
+      aboutInfo: {
         name: "Natalie Corniell",
-        aboutMe: "- Web Developer in Santo Domingo -",
-        photo: 'background: url("../assets/img/me.jpg") center center no-repeat;',
-        website: "https://portfolio-paiisyfkc-nataliecorniell.vercel.app",
+        aboutMe: "- Desarrolladora web Santo Domingo -",
+        photo:
+          'background: url("../assets/img/me.jpg") center center no-repeat;',
+        website: "https://portfolio-two-sigma.vercel.app",
         phoneNumber: "(829)-518-9958",
         city: "Santo Domingo",
         linkedIn: "/NatalieCorniell",
-        degree: "Software technologist",
+        degree: "Tecnóloga en Software",
         email: "nataliecorniell@gmail.com",
-        experience: "1+ year of experience in the area",
+        experience: "1+ años de experiencia en el área.",
         awards: "Microsoft Certified: Azure Fundamentals",
-        skills:[{name: 'Scrum', val: 90},{name: 'MVC', val: 90},
-         {name: 'VueJs', val: 90}, {name: 'Umbraco CMS', val: 90},
-         {name: 'CSharp', val: 90}]
+        skills: [
+          { name: "Scrum", val: 50 },
+          { name: "MVC", val: 90 },
+          { name: "VueJs", val: 60 },
+          { name: "Umbraco CMS", val: 90 },
+          { name: "CSharp", val: 80 },
+        ],
       },
- 
     };
   },
   components: {
@@ -76,6 +80,14 @@ export default {
     About,
     Projects,
     Contact,
+  },
+  methods: {
+    /**
+     * Skills animation
+     */
+    skilsContent: function () {
+    
+    },
   },
 };
 </script>
